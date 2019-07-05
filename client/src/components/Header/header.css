@@ -1,0 +1,38 @@
+.list {
+	width: 250px;
+}
+.fullList {
+	width: auto;
+}
+.navAlignment {
+	margin-left: auto;
+	margin-right: -12px;
+}
+.rightBtns {
+	font-size: 12px;
+}
+.centeredBtns {
+	font-size: 12px;
+}
+.navButton {
+	padding: 6px 18px !important;
+	opacity: 0.7;
+}
+.navButton:hover {
+	opacity: 1;
+}
+.partypokerLogo {
+	width: 30px;
+	padding-right: 15px;
+}
+.logoArea {
+	text-decoration: none;
+	display: contents;
+	color: inherit;
+	font-weight: inherit;
+}
+@media only screen and (max-width: 599px) {
+	.navTitle {
+		display: none !important;
+	}
+}

@@ -1,0 +1,72 @@
+module.exports = {
+	powerfest: {
+		pos_text_x: 272,
+		pos_text_y: 1056,
+		ft_x: 25,
+		ft_y: 825,
+		ft_text_x: 74,
+		ft_text_y: 886,
+		silver_x: 37.5,
+		silver_y: 662,
+		bronze_x: 261.5,
+		bronze_y: 660,
+		trophy_x: 73.5,
+		trophy_y: 527
+	},
+	monsterseries: {
+		pos_text_x: 655,
+		pos_text_y: 1056,
+		ft_x: 412,
+		ft_y: 825,
+		ft_text_x: 461,
+		ft_text_y: 887,
+		silver_x: 421.5,
+		silver_y: 662,
+		bronze_x: 645.5,
+		bronze_y: 660,
+		trophy_x: 457,
+		trophy_y: 527
+	},
+	koseries: {
+		pos_text_x: 1040,
+		pos_text_y: 1056,
+		ft_x: 795,
+		ft_y: 825,
+		ft_text_x: 842.5,
+		ft_text_y: 886,
+		silver_x: 810.5,
+		silver_y: 662,
+		bronze_x: 1034.5,
+		bronze_y: 660,
+		trophy_x: 840.5,
+		trophy_y: 527
+	},
+	omahaseries: {
+		pos_text_x: 1426,
+		pos_text_y: 1056,
+		ft_x: 1178,
+		ft_y: 825,
+		ft_text_x: 1226,
+		ft_text_y: 886,
+		silver_x: 1195.5,
+		silver_y: 662,
+		bronze_x: 1419.5,
+		bronze_y: 660,
+		trophy_x: 1225.5,
+		trophy_y: 527
+	},
+	millionsonline: {
+		pos_text_x: 1812,
+		pos_text_y: 1056,
+		ft_x: 1559,
+		ft_y: 825,
+		ft_text_x: 1607,
+		ft_text_y: 886,
+		silver_x: 1573.5,
+		silver_y: 662,
+		bronze_x: 1797,
+		bronze_y: 660,
+		trophy_x: 1610,
+		trophy_y: 527
+	}
+};
