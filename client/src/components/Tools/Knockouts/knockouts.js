@@ -110,27 +110,7 @@ class Knockouts extends Component {
 
 		if (!this.state.submitLoading) {
 			this.setState({ disableButton: true, submitSuccess: false, submitLoading: true });
-			const body = {
-				mattstaples: this.state.mattstaples || 0,
-				jeffgross: this.state.jeffgross || 0,
-				kristenbicknell: this.state.kristenbicknell || 0,
-				allinpav: this.state.allinpav || 0,
-				kevinmartin: this.state.kevinmartin || 0,
-				luimartins: this.state.luimartins || 0,
-				anatolyfilatov: this.state.anatolyfilatov || 0,
-				hotted: this.state.hotted || 0,
-				ryanschoonbaert: this.state.ryanschoonbaert || 0,
-				egption: this.state.egption || 0,
-				dramaticdegen: this.state.dramaticdegen || 0,
-				courtiebee: this.state.courtiebee || 0,
-				elky: this.state.elky || 0,
-				patrickleonard: this.state.patrickleonard || 0,
-				heymonia: this.state.heymonia || 0,
-				dwstevie: this.state.dwstevie || 0,
-				tonkaaaap: this.state.tonkaaaap || 0,
-				isildur: this.state.isildur || 0,
-				bencb: this.state.bencb || 0
-			};
+			const body = this.state;
 
 			fetch('/api/v1/knockouts', {
 				method: 'POST',

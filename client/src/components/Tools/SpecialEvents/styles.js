@@ -2,7 +2,15 @@ module.exports = theme => ({
 	textField: {
 		marginLeft: theme.spacing(1),
 		marginRight: theme.spacing(1),
-		width: 160
+		width: 165
+	},
+	textFieldAmt: {
+		display: 'block',
+		width: 80,
+		marginTop: 0,
+		marginRight: theme.spacing(1),
+		marginBottom: 0,
+		marginLeft: 0
 	},
 	formControl: {
 		margin: theme.spacing(1),

@@ -5,7 +5,10 @@ module.exports = [
 		ftState: 'powerfestFtAmt',
 		bronzeState: 'powerfestBronze',
 		silverState: 'powerfestSilver',
-		trophyState: 'powerfestTrophy'
+		trophyState: 'powerfestTrophy',
+		bronzeStateAmt: 'powerfestBronzeAmt',
+		silverStateAmt: 'powerfestSilverAmt',
+		trophyStateAmt: 'powerfestTrophyAmt'
 	},
 	{
 		name: 'Monster Series',
@@ -13,7 +16,10 @@ module.exports = [
 		ftState: 'monsterFtAmt',
 		bronzeState: 'monsterBronze',
 		silverState: 'monsterSilver',
-		trophyState: 'monsterTrophy'
+		trophyState: 'monsterTrophy',
+		bronzeStateAmt: 'monsterBronzeAmt',
+		silverStateAmt: 'monsterSilverAmt',
+		trophyStateAmt: 'monsterTrophyAmt'
 	},
 	{
 		name: 'KO Series',
@@ -21,7 +27,10 @@ module.exports = [
 		ftState: 'koFtAmt',
 		bronzeState: 'koBronze',
 		silverState: 'koSilver',
-		trophyState: 'koTrophy'
+		trophyState: 'koTrophy',
+		bronzeStateAmt: 'koBronzeAmt',
+		silverStateAmt: 'koSilverAmt',
+		trophyStateAmt: 'koTrophyAmt'
 	},
 	{
 		name: 'Omaha Series',
@@ -29,7 +38,10 @@ module.exports = [
 		ftState: 'omahaFtAmt',
 		bronzeState: 'omahaBronze',
 		silverState: 'omahaSilver',
-		trophyState: 'omahaTrophy'
+		trophyState: 'omahaTrophy',
+		bronzeStateAmt: 'omahaBronzeAmt',
+		silverStateAmt: 'omahaSilverAmt',
+		trophyStateAmt: 'omahaTrophyAmt'
 	},
 	{
 		name: 'Millions Online',
@@ -37,6 +49,9 @@ module.exports = [
 		ftState: 'millionsFtAmt',
 		bronzeState: 'millionsBronze',
 		silverState: 'millionsSilver',
-		trophyState: 'millionsTrophy'
+		trophyState: 'millionsTrophy',
+		bronzeStateAmt: 'millionsBronzeAmt',
+		silverStateAmt: 'millionsSilverAmt',
+		trophyStateAmt: 'millionsTrophyAmt'
 	}
 ];

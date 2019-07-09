@@ -5,7 +5,10 @@ module.exports = [
 		ftState: 'terminator530FtAmt',
 		bronzeState: 'terminator530Bronze',
 		silverState: 'terminator530Silver',
-		trophyState: 'terminator530Trophy'
+		trophyState: 'terminator530Trophy',
+		bronzeStateAmt: 'terminator530BronzeAmt',
+		silverStateAmt: 'terminator530SilverAmt',
+		trophyStateAmt: 'terminator530TrophyAmt'
 	},
 	{
 		name: 'Deepstack $215',
@@ -13,7 +16,10 @@ module.exports = [
 		ftState: 'deepstack215FtAmt',
 		bronzeState: 'deepstack215Bronze',
 		silverState: 'deepstack215Silver',
-		trophyState: 'deepstack215Trophy'
+		trophyState: 'deepstack215Trophy',
+		bronzeStateAmt: 'deepstack215BronzeAmt',
+		silverStateAmt: 'deepstack215SilverAmt',
+		trophyStateAmt: 'deepstack215TrophyAmt'
 	},
 	{
 		name: 'Galdiator $320',
@@ -21,7 +27,10 @@ module.exports = [
 		ftState: 'gladiator320FtAmt',
 		bronzeState: 'gladiator320Bronze',
 		silverState: 'gladiator320Silver',
-		trophyState: 'gladiator320Trophy'
+		trophyState: 'gladiator320Trophy',
+		bronzeStateAmt: 'gladiator320BronzeAmt',
+		silverStateAmt: 'gladiator320SilverAmt',
+		trophyStateAmt: 'gladiator320TrophyAmt'
 	},
 	{
 		name: 'MM Bounty $215',
@@ -29,7 +38,10 @@ module.exports = [
 		ftState: 'mmbounty215FtAmt',
 		bronzeState: 'mmbounty215Bronze',
 		silverState: 'mmbounty215Silver',
-		trophyState: 'mmbounty215Trophy'
+		trophyState: 'mmbounty215Trophy',
+		bronzeStateAmt: 'mmbounty215BronzeAmt',
+		silverStateAmt: 'mmbounty215SilverAmt',
+		trophyStateAmt: 'mmbounty215TrophyAmt'
 	},
 	{
 		name: 'Clasico $530',
@@ -37,7 +49,10 @@ module.exports = [
 		ftState: 'clasico530FtAmt',
 		bronzeState: 'clasico530Bronze',
 		silverState: 'clasico530Silver',
-		trophyState: 'clasico530Trophy'
+		trophyState: 'clasico530Trophy',
+		bronzeStateAmt: 'clasico530BronzeAmt',
+		silverStateAmt: 'clasico530SilverAmt',
+		trophyStateAmt: 'clasico530TrophyAmt'
 	},
 	{
 		name: 'Warm Up $82',
@@ -45,7 +60,10 @@ module.exports = [
 		ftState: 'warmup82FtAmt',
 		bronzeState: 'warmup82Bronze',
 		silverState: 'warmup82Silver',
-		trophyState: 'warmup82Trophy'
+		trophyState: 'warmup82Trophy',
+		bronzeStateAmt: 'warmup82BronzeAmt',
+		silverStateAmt: 'warmup82SilverAmt',
+		trophyStateAmt: 'warmup82TrophyAmt'
 	},
 	{
 		name: 'Daily Grind $109',
@@ -53,7 +71,10 @@ module.exports = [
 		ftState: 'dailygrind109FtAmt',
 		bronzeState: 'dailygrind109Bronze',
 		silverState: 'dailygrind109Silver',
-		trophyState: 'dailygrind109Trophy'
+		trophyState: 'dailygrind109Trophy',
+		bronzeStateAmt: 'dailygrind109BronzeAmt',
+		silverStateAmt: 'dailygrind109SilverAmt',
+		trophyStateAmt: 'dailygrind109TrophyAmt'
 	},
 	{
 		name: 'Terminator $109',
@@ -61,7 +82,10 @@ module.exports = [
 		ftState: 'terminator109FtAmt',
 		bronzeState: 'terminator109Bronze',
 		silverState: 'terminator109Silver',
-		trophyState: 'terminator109Trophy'
+		trophyState: 'terminator109Trophy',
+		bronzeStateAmt: 'terminator109BronzeAmt',
+		silverStateAmt: 'terminator109SilverAmt',
+		trophyStateAmt: 'terminator109TrophyAmt'
 	},
 	{
 		name: 'Deepstack $55',
@@ -69,7 +93,10 @@ module.exports = [
 		ftState: 'deepstack55FtAmt',
 		bronzeState: 'deepstack55Bronze',
 		silverState: 'deepstack55Silver',
-		trophyState: 'deepstack55Trophy'
+		trophyState: 'deepstack55Trophy',
+		bronzeStateAmt: 'deepstack55BronzeAmt',
+		silverStateAmt: 'deepstack55SilverAmt',
+		trophyStateAmt: 'deepstack55TrophyAmt'
 	},
 	{
 		name: 'Galdiator $55',
@@ -77,7 +104,10 @@ module.exports = [
 		ftState: 'gladiator55FtAmt',
 		bronzeState: 'gladiator55Bronze',
 		silverState: 'gladiator55Silver',
-		trophyState: 'gladiator55Trophy'
+		trophyState: 'gladiator55Trophy',
+		bronzeStateAmt: 'gladiator55BronzeAmt',
+		silverStateAmt: 'gladiator55SilverAmt',
+		trophyStateAmt: 'gladiator55TrophyAmt'
 	},
 	{
 		name: 'MM Bounty $55',
@@ -85,7 +115,10 @@ module.exports = [
 		ftState: 'mmbounty55FtAmt',
 		bronzeState: 'mmbounty55Bronze',
 		silverState: 'mmbounty55Silver',
-		trophyState: 'mmbounty55Trophy'
+		trophyState: 'mmbounty55Trophy',
+		bronzeStateAmt: 'mmbounty55BronzeAmt',
+		silverStateAmt: 'mmbounty55SilverAmt',
+		trophyStateAmt: 'mmbounty55TrophyAmt'
 	},
 	{
 		name: 'Clasico $109',
@@ -93,7 +126,10 @@ module.exports = [
 		ftState: 'clasico109FtAmt',
 		bronzeState: 'clasico109Bronze',
 		silverState: 'clasico109Silver',
-		trophyState: 'clasico109Trophy'
+		trophyState: 'clasico109Trophy',
+		bronzeStateAmt: 'clasico109BronzeAmt',
+		silverStateAmt: 'clasico109SilverAmt',
+		trophyStateAmt: 'clasico109TrophyAmt'
 	},
 	{
 		name: 'Warm Up $22',
@@ -101,7 +137,10 @@ module.exports = [
 		ftState: 'warmup22FtAmt',
 		bronzeState: 'warmup22Bronze',
 		silverState: 'warmup22Silver',
-		trophyState: 'warmup22Trophy'
+		trophyState: 'warmup22Trophy',
+		bronzeStateAmt: 'warmup22BronzeAmt',
+		silverStateAmt: 'warmup22SilverAmt',
+		trophyStateAmt: 'warmup22TrophyAmt'
 	},
 	{
 		name: 'Daily Grind $33',
@@ -109,7 +148,10 @@ module.exports = [
 		ftState: 'dailygrind33FtAmt',
 		bronzeState: 'dailygrind33Bronze',
 		silverState: 'dailygrind33Silver',
-		trophyState: 'dailygrind33Trophy'
+		trophyState: 'dailygrind33Trophy',
+		bronzeStateAmt: 'dailygrind33BronzeAmt',
+		silverStateAmt: 'dailygrind33SilverAmt',
+		trophyStateAmt: 'dailygrind33TrophyAmt'
 	},
 	{
 		name: 'Terminator $33',
@@ -117,7 +159,10 @@ module.exports = [
 		ftState: 'terminator33FtAmt',
 		bronzeState: 'terminator33Bronze',
 		silverState: 'terminator33Silver',
-		trophyState: 'terminator33Trophy'
+		trophyState: 'terminator33Trophy',
+		bronzeStateAmt: 'terminator33BronzeAmt',
+		silverStateAmt: 'terminator33SilverAmt',
+		trophyStateAmt: 'terminator33TrophyAmt'
 	},
 	{
 		name: 'Deepstack $11',
@@ -125,7 +170,10 @@ module.exports = [
 		ftState: 'deepstack11FtAmt',
 		bronzeState: 'deepstack11Bronze',
 		silverState: 'deepstack11Silver',
-		trophyState: 'deepstack11Trophy'
+		trophyState: 'deepstack11Trophy',
+		bronzeStateAmt: 'deepstack11BronzeAmt',
+		silverStateAmt: 'deepstack11SilverAmt',
+		trophyStateAmt: 'deepstack11TrophyAmt'
 	},
 	{
 		name: 'Galdiator $11',
@@ -133,7 +181,10 @@ module.exports = [
 		ftState: 'gladiator11FtAmt',
 		bronzeState: 'gladiator11Bronze',
 		silverState: 'gladiator11Silver',
-		trophyState: 'gladiator11Trophy'
+		trophyState: 'gladiator11Trophy',
+		bronzeStateAmt: 'gladiator11BronzeAmt',
+		silverStateAmt: 'gladiator11SilverAmt',
+		trophyStateAmt: 'gladiator11TrophyAmt'
 	},
 	{
 		name: 'MM Bounty $11',
@@ -141,7 +192,10 @@ module.exports = [
 		ftState: 'mmbounty11FtAmt',
 		bronzeState: 'mmbounty11Bronze',
 		silverState: 'mmbounty11Silver',
-		trophyState: 'mmbounty11Trophy'
+		trophyState: 'mmbounty11Trophy',
+		bronzeStateAmt: 'mmbounty11BronzeAmt',
+		silverStateAmt: 'mmbounty11SilverAmt',
+		trophyStateAmt: 'mmbounty11TrophyAmt'
 	},
 	{
 		name: 'Clasico $33',
@@ -149,6 +203,9 @@ module.exports = [
 		ftState: 'clasico33FtAmt',
 		bronzeState: 'clasico33Bronze',
 		silverState: 'clasico33Silver',
-		trophyState: 'clasico33Trophy'
+		trophyState: 'clasico33Trophy',
+		bronzeStateAmt: 'clasico33BronzeAmt',
+		silverStateAmt: 'clasico33SilverAmt',
+		trophyStateAmt: 'clasico33TrophyAmt'
 	}
 ];

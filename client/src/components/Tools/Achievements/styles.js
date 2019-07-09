@@ -2,7 +2,15 @@ module.exports = theme => ({
 	textField: {
 		marginLeft: theme.spacing(1),
 		marginRight: theme.spacing(1),
-		width: 160
+		width: 165
+	},
+	textFieldAmt: {
+		display: 'block',
+		width: 80,
+		marginTop: 0,
+		marginRight: theme.spacing(1),
+		marginBottom: 0,
+		marginLeft: 0
 	},
 	formControl: {
 		margin: theme.spacing(1),
@@ -27,12 +35,9 @@ module.exports = theme => ({
 		margin: '25px auto 0'
 	},
 	achievementsForm: {
-		flexWrap: 'wrap',
-		margin: '0 auto',
 		width: 650,
-		position: 'absolute',
-		left: '50%',
-		marginLeft: -325,
+		margin: '0 auto',
+		textAlign: 'center',
 		marginBottom: 150
 	},
 	helpText: {
@@ -56,6 +61,7 @@ module.exports = theme => ({
 	},
 	tournamentTitle: {
 		fontSize: 20,
-		margin: 0
+		margin: 0,
+		textAlign: 'left'
 	}
 });

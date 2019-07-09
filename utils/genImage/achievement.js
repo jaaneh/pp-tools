@@ -11,7 +11,13 @@ module.exports = {
 		bronze_x: 730,
 		bronze_y: 118,
 		trophy_x: 612,
-		trophy_y: 56
+		trophy_y: 56,
+		silver_amt_x: 597,
+		silver_amt_y: 155,
+		bronze_amt_x: 751,
+		bronze_amt_y: 154,
+		trophy_amt_x: 673,
+		trophy_amt_y: 100
 	},
 	deepstack215: {
 		pos_text_x: 1017,
@@ -25,7 +31,13 @@ module.exports = {
 		bronze_x: 1010,
 		bronze_y: 118,
 		trophy_x: 894,
-		trophy_y: 56
+		trophy_y: 56,
+		silver_amt_x: 878,
+		silver_amt_y: 155,
+		bronze_amt_x: 1032,
+		bronze_amt_y: 154,
+		trophy_amt_x: 955,
+		trophy_amt_y: 100
 	},
 	gladiator320: {
 		pos_text_x: 1294,
@@ -39,7 +51,13 @@ module.exports = {
 		bronze_x: 1290,
 		bronze_y: 118,
 		trophy_x: 1172,
-		trophy_y: 56
+		trophy_y: 56,
+		silver_amt_x: 1156,
+		silver_amt_y: 155,
+		bronze_amt_x: 1311,
+		bronze_amt_y: 154,
+		trophy_amt_x: 1233,
+		trophy_amt_y: 100
 	},
 	mmbounty215: {
 		pos_text_x: 1574,
@@ -53,7 +71,13 @@ module.exports = {
 		bronze_x: 1569,
 		bronze_y: 118,
 		trophy_x: 1450,
-		trophy_y: 56
+		trophy_y: 56,
+		silver_amt_x: 1435,
+		silver_amt_y: 155,
+		bronze_amt_x: 1590,
+		bronze_amt_y: 154,
+		trophy_amt_x: 1511,
+		trophy_amt_y: 100
 	},
 	clasico530: {
 		pos_text_x: 1847,
@@ -67,7 +91,13 @@ module.exports = {
 		bronze_x: 1841,
 		bronze_y: 118,
 		trophy_x: 1725,
-		trophy_y: 56
+		trophy_y: 56,
+		silver_amt_x: 1707,
+		silver_amt_y: 155,
+		bronze_amt_x: 1863,
+		bronze_amt_y: 154,
+		trophy_amt_x: 1786,
+		trophy_amt_y: 100
 	},
 	warmup82: {
 		pos_text_x: 178,
@@ -81,7 +111,13 @@ module.exports = {
 		bronze_x: 175,
 		bronze_y: 478,
 		trophy_x: 59,
-		trophy_y: 417
+		trophy_y: 417,
+		silver_amt_x: 43,
+		silver_amt_y: 515,
+		bronze_amt_x: 197,
+		bronze_amt_y: 514,
+		trophy_amt_x: 120,
+		trophy_amt_y: 460
 	},
 	dailygrind109: {
 		pos_text_x: 458,
@@ -95,7 +131,13 @@ module.exports = {
 		bronze_x: 452,
 		bronze_y: 478,
 		trophy_x: 337,
-		trophy_y: 417
+		trophy_y: 417,
+		silver_amt_x: 320,
+		silver_amt_y: 515,
+		bronze_amt_x: 474,
+		bronze_amt_y: 514,
+		trophy_amt_x: 398,
+		trophy_amt_y: 460
 	},
 	terminator109: {
 		pos_text_x: 735,
@@ -109,7 +151,13 @@ module.exports = {
 		bronze_x: 731,
 		bronze_y: 478,
 		trophy_x: 614,
-		trophy_y: 417
+		trophy_y: 417,
+		silver_amt_x: 599,
+		silver_amt_y: 515,
+		bronze_amt_x: 753,
+		bronze_amt_y: 514,
+		trophy_amt_x: 675,
+		trophy_amt_y: 460
 	},
 	deepstack55: {
 		pos_text_x: 1015,
@@ -123,7 +171,13 @@ module.exports = {
 		bronze_x: 1011,
 		bronze_y: 478,
 		trophy_x: 894,
-		trophy_y: 417
+		trophy_y: 417,
+		silver_amt_x: 879,
+		silver_amt_y: 515,
+		bronze_amt_x: 1033,
+		bronze_amt_y: 514,
+		trophy_amt_x: 954,
+		trophy_amt_y: 460
 	},
 	gladiator55: {
 		pos_text_x: 1293,
@@ -137,7 +191,13 @@ module.exports = {
 		bronze_x: 1290,
 		bronze_y: 478,
 		trophy_x: 1173,
-		trophy_y: 417
+		trophy_y: 417,
+		silver_amt_x: 1157,
+		silver_amt_y: 515,
+		bronze_amt_x: 1312,
+		bronze_amt_y: 514,
+		trophy_amt_x: 1233,
+		trophy_amt_y: 460
 	},
 	mmbounty55: {
 		pos_text_x: 1572,
@@ -151,7 +211,13 @@ module.exports = {
 		bronze_x: 1568,
 		bronze_y: 478,
 		trophy_x: 1450,
-		trophy_y: 417
+		trophy_y: 417,
+		silver_amt_x: 1434,
+		silver_amt_y: 515,
+		bronze_amt_x: 1589,
+		bronze_amt_y: 514,
+		trophy_amt_x: 1511,
+		trophy_amt_y: 460
 	},
 	clasico109: {
 		pos_text_x: 1845,
@@ -165,7 +231,13 @@ module.exports = {
 		bronze_x: 1841,
 		bronze_y: 478,
 		trophy_x: 1725,
-		trophy_y: 417
+		trophy_y: 417,
+		silver_amt_x: 1707,
+		silver_amt_y: 515,
+		bronze_amt_x: 1863,
+		bronze_amt_y: 515,
+		trophy_amt_x: 1786,
+		trophy_amt_y: 460
 	},
 	warmup22: {
 		pos_text_x: 178,
@@ -179,7 +251,13 @@ module.exports = {
 		bronze_x: 175,
 		bronze_y: 838,
 		trophy_x: 59,
-		trophy_y: 778
+		trophy_y: 778,
+		silver_amt_x: 43,
+		silver_amt_y: 875,
+		bronze_amt_x: 197,
+		bronze_amt_y: 874,
+		trophy_amt_x: 120,
+		trophy_amt_y: 820
 	},
 	dailygrind33: {
 		pos_text_x: 456,
@@ -193,7 +271,13 @@ module.exports = {
 		bronze_x: 452,
 		bronze_y: 838,
 		trophy_x: 337,
-		trophy_y: 778
+		trophy_y: 778,
+		silver_amt_x: 320,
+		silver_amt_y: 875,
+		bronze_amt_x: 474,
+		bronze_amt_y: 874,
+		trophy_amt_x: 398,
+		trophy_amt_y: 820
 	},
 	terminator33: {
 		pos_text_x: 735,
@@ -207,7 +291,13 @@ module.exports = {
 		bronze_x: 731,
 		bronze_y: 838,
 		trophy_x: 614,
-		trophy_y: 778
+		trophy_y: 778,
+		silver_amt_x: 599,
+		silver_amt_y: 875,
+		bronze_amt_x: 753,
+		bronze_amt_y: 874,
+		trophy_amt_x: 675,
+		trophy_amt_y: 820
 	},
 	deepstack11: {
 		pos_text_x: 1015,
@@ -221,7 +311,13 @@ module.exports = {
 		bronze_x: 1011,
 		bronze_y: 838,
 		trophy_x: 894,
-		trophy_y: 778
+		trophy_y: 778,
+		silver_amt_x: 879,
+		silver_amt_y: 875,
+		bronze_amt_x: 1033,
+		bronze_amt_y: 874,
+		trophy_amt_x: 954,
+		trophy_amt_y: 820
 	},
 	gladiator11: {
 		pos_text_x: 1293,
@@ -234,8 +330,14 @@ module.exports = {
 		silver_y: 838,
 		bronze_x: 1290,
 		bronze_y: 838,
-		trophy_x: 1173,
-		trophy_y: 778
+		trophy_x: 1172,
+		trophy_y: 778,
+		silver_amt_x: 1157,
+		silver_amt_y: 875,
+		bronze_amt_x: 1312,
+		bronze_amt_y: 874,
+		trophy_amt_x: 1233,
+		trophy_amt_y: 820
 	},
 	mmbounty11: {
 		pos_text_x: 1572,
@@ -249,7 +351,13 @@ module.exports = {
 		bronze_x: 1568,
 		bronze_y: 838,
 		trophy_x: 1450,
-		trophy_y: 778
+		trophy_y: 778,
+		silver_amt_x: 1434,
+		silver_amt_y: 875,
+		bronze_amt_x: 1589,
+		bronze_amt_y: 874,
+		trophy_amt_x: 1511,
+		trophy_amt_y: 820
 	},
 	clasico33: {
 		pos_text_x: 1845,
@@ -263,6 +371,12 @@ module.exports = {
 		bronze_x: 1841,
 		bronze_y: 838,
 		trophy_x: 1725,
-		trophy_y: 775
+		trophy_y: 775,
+		silver_amt_x: 1707,
+		silver_amt_y: 875,
+		bronze_amt_x: 1863,
+		bronze_amt_y: 874,
+		trophy_amt_x: 1786,
+		trophy_amt_y: 820
 	}
 };

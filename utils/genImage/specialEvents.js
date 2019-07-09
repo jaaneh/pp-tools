@@ -11,7 +11,13 @@ module.exports = {
 		bronze_x: 261.5,
 		bronze_y: 660,
 		trophy_x: 73.5,
-		trophy_y: 527
+		trophy_y: 527,
+		silver_amt_x: 67,
+		silver_amt_y: 715.5,
+		bronze_amt_x: 293.5,
+		bronze_amt_y: 713.5,
+		trophy_amt_x: 181,
+		trophy_amt_y: 595
 	},
 	monsterseries: {
 		pos_text_x: 655,
@@ -25,7 +31,13 @@ module.exports = {
 		bronze_x: 645.5,
 		bronze_y: 660,
 		trophy_x: 457,
-		trophy_y: 527
+		trophy_y: 527,
+		silver_amt_x: 451,
+		silver_amt_y: 715.5,
+		bronze_amt_x: 677.5,
+		bronze_amt_y: 713.5,
+		trophy_amt_x: 564.5,
+		trophy_amt_y: 595
 	},
 	koseries: {
 		pos_text_x: 1040,
@@ -39,7 +51,13 @@ module.exports = {
 		bronze_x: 1034.5,
 		bronze_y: 660,
 		trophy_x: 840.5,
-		trophy_y: 527
+		trophy_y: 527,
+		silver_amt_x: 840,
+		silver_amt_y: 715.5,
+		bronze_amt_x: 1065.5,
+		bronze_amt_y: 713.5,
+		trophy_amt_x: 948,
+		trophy_amt_y: 595
 	},
 	omahaseries: {
 		pos_text_x: 1426,
@@ -53,7 +71,13 @@ module.exports = {
 		bronze_x: 1419.5,
 		bronze_y: 660,
 		trophy_x: 1225.5,
-		trophy_y: 527
+		trophy_y: 527,
+		silver_amt_x: 1225,
+		silver_amt_y: 715.5,
+		bronze_amt_x: 1451,
+		bronze_amt_y: 713.5,
+		trophy_amt_x: 1333,
+		trophy_amt_y: 595
 	},
 	millionsonline: {
 		pos_text_x: 1812,
@@ -67,6 +91,12 @@ module.exports = {
 		bronze_x: 1797,
 		bronze_y: 660,
 		trophy_x: 1610,
-		trophy_y: 527
+		trophy_y: 527,
+		silver_amt_x: 1603,
+		silver_amt_y: 715.5,
+		bronze_amt_x: 1828.5,
+		bronze_amt_y: 713.5,
+		trophy_amt_x: 1718,
+		trophy_amt_y: 595
 	}
 };
