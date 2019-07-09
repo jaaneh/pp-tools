@@ -35,12 +35,9 @@ module.exports = theme => ({
 		margin: '25px auto 0'
 	},
 	specialEventsForm: {
-		flexWrap: 'wrap',
-		margin: '0 auto',
 		width: 650,
-		position: 'absolute',
-		left: '50%',
-		marginLeft: -325,
+		margin: '0 auto',
+		textAlign: 'center',
 		marginBottom: 150
 	},
 	helpText: {
@@ -64,6 +61,7 @@ module.exports = theme => ({
 	},
 	tournamentTitle: {
 		fontSize: 20,
-		margin: 0
+		margin: 0,
+		textAlign: 'left'
 	}
 });
