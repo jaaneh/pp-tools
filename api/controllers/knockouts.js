@@ -32,7 +32,7 @@ exports.get_knockouts = (req, res, next) => {
 
 // POST /knockouts
 exports.post_knockouts = async (req, res, next) => {
-	Knockouts.findOneAndUpdate({ user_id: req.user.userId })
+	Knockouts.findOneAndUpdate({ user_id: req.user.userId }, { new: true })
 		.exec()
 		.then(stats => {
 			if (!stats) {

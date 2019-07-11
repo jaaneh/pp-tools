@@ -32,7 +32,7 @@ exports.get_achievements = (req, res, next) => {
 
 // POST /achievements
 exports.post_achievements = async (req, res, next) => {
-	Achievement.findOneAndUpdate({ user_id: req.user.userId })
+	Achievement.findOneAndUpdate({ user_id: req.user.userId }, { new: true })
 		.exec()
 		.then(stats => {
 			if (!stats) {

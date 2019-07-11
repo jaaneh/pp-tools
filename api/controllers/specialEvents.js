@@ -32,7 +32,7 @@ exports.get_specialevents = (req, res, next) => {
 
 // POST /specialEvents
 exports.post_specialevents = async (req, res, next) => {
-	SpecialEvent.findOneAndUpdate({ user_id: req.user.userId })
+	SpecialEvent.findOneAndUpdate({ user_id: req.user.userId }, { new: true })
 		.exec()
 		.then(stats => {
 			if (!stats) {
