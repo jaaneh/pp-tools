@@ -40,48 +40,12 @@ exports.post_knockouts = async (req, res, next) => {
 					_id: mongoose.Types.ObjectId(),
 					user_id: req.user.userId,
 					last_updated: new Date().getTime(),
-					matt_staples: req.body.mattstaples || 0,
-					jeff_gross: req.body.jeffgross || 0,
-					kristen_bicknell: req.body.kristenbicknell || 0,
-					allinpav: req.body.allinpav || 0,
-					kevin_martin: req.body.kevinmartin || 0,
-					lui_martins: req.body.luimartins || 0,
-					anatoly_filatov: req.body.anatolyfilatov || 0,
-					hotted: req.body.hotted || 0,
-					ryan_schoonbaert: req.body.ryanschoonbaert || 0,
-					egption: req.body.egption || 0,
-					dramatic_degen: req.body.dramaticdegen || 0,
-					courtiebee: req.body.courtiebee || 0,
-					elky: req.body.elky || 0,
-					patrick_leonard: req.body.patrickleonard || 0,
-					heymonia: req.body.heymonia || 0,
-					dwstevie: req.body.dwstevie || 0,
-					tonkaaaap: req.body.tonkaaaap || 0,
-					isildur: req.body.isildur || 0,
-					bencb: req.body.bencb || 0
+					knockouts: req.body.knockouts
 				});
 				knockouts.save();
 			} else {
 				stats.last_updated = new Date().getTime();
-				stats.matt_staples = req.body.mattstaples || 0;
-				stats.jeff_gross = req.body.jeffgross || 0;
-				stats.kristen_bicknell = req.body.kristenbicknell || 0;
-				stats.allinpav = req.body.allinpav || 0;
-				stats.kevin_martin = req.body.kevinmartin || 0;
-				stats.lui_martins = req.body.luimartins || 0;
-				stats.anatoly_filatov = req.body.anatolyfilatov || 0;
-				stats.hotted = req.body.hotted || 0;
-				stats.ryan_schoonbaert = req.body.ryanschoonbaert || 0;
-				stats.egption = req.body.egption || 0;
-				stats.dramatic_degen = req.body.dramaticdegen || 0;
-				stats.courtiebee = req.body.courtiebee || 0;
-				stats.elky = req.body.elky || 0;
-				stats.patrick_leonard = req.body.patrickleonard || 0;
-				stats.heymonia = req.body.heymonia || 0;
-				stats.dwstevie = req.body.dwstevie || 0;
-				stats.tonkaaaap = req.body.tonkaaaap || 0;
-				stats.isildur = req.body.isildur || 0;
-				stats.bencb = req.body.bencb || 0;
+				stats.knockouts = req.body.knockouts;
 				stats.save();
 			}
 		})
@@ -92,8 +56,7 @@ exports.post_knockouts = async (req, res, next) => {
 			});
 		});
 
-	const newBody = await replaceZero(req.body);
-	// const time = new Date().getTime();
+	const newBody = await replaceZero(req.body.knockouts);
 	const outDir = await fs.createWriteStream(`api/images/knockouts/${req.user.userId}.png`);
 	const glove = await loadImage(__dirname + '/../images/stocks/knockouts/glove.png');
 	const objKeys = await Object.keys(newBody);

@@ -29,46 +29,48 @@ class specialEvents extends Component {
 			submitSuccess: false,
 			disableButton: false,
 			generatedURL: '',
-			powerfest: 0,
-			powerfestFtAmt: 0,
-			powerfestBronze: false,
-			powerfestSilver: false,
-			powerfestTrophy: false,
-			powerfestBronzeAmt: 1,
-			powerfestSilverAmt: 1,
-			powerfestTrophyAmt: 1,
-			monsterseries: 0,
-			monsterFtAmt: 0,
-			monsterBronze: false,
-			monsterSilver: false,
-			monsterTrophy: false,
-			monsterBronzeAmt: 1,
-			monsterSilverAmt: 1,
-			monsterTrophyAmt: 1,
-			koseries: 0,
-			koFtAmt: 0,
-			koBronze: false,
-			koSilver: false,
-			koTrophy: false,
-			koBronzeAmt: 1,
-			koSilverAmt: 1,
-			koTrophyAmt: 1,
-			omahaseries: 0,
-			omahaFtAmt: 0,
-			omahaBronze: false,
-			omahaSilver: false,
-			omahaTrophy: false,
-			omahaBronzeAmt: 1,
-			omahaSilverAmt: 1,
-			omahaTrophyAmt: 1,
-			millionsonline: 0,
-			millionsFtAmt: 0,
-			millionsBronze: false,
-			millionsSilver: false,
-			millionsTrophy: false,
-			millionsBronzeAmt: 1,
-			millionsSilverAmt: 1,
-			millionsTrophyAmt: 1
+			specialEvent: {
+				powerfest: 0,
+				powerfestFtAmt: 0,
+				powerfestBronze: false,
+				powerfestSilver: false,
+				powerfestTrophy: false,
+				powerfestBronzeAmt: 1,
+				powerfestSilverAmt: 1,
+				powerfestTrophyAmt: 1,
+				monsterseries: 0,
+				monsterFtAmt: 0,
+				monsterBronze: false,
+				monsterSilver: false,
+				monsterTrophy: false,
+				monsterBronzeAmt: 1,
+				monsterSilverAmt: 1,
+				monsterTrophyAmt: 1,
+				koseries: 0,
+				koFtAmt: 0,
+				koBronze: false,
+				koSilver: false,
+				koTrophy: false,
+				koBronzeAmt: 1,
+				koSilverAmt: 1,
+				koTrophyAmt: 1,
+				omahaseries: 0,
+				omahaFtAmt: 0,
+				omahaBronze: false,
+				omahaSilver: false,
+				omahaTrophy: false,
+				omahaBronzeAmt: 1,
+				omahaSilverAmt: 1,
+				omahaTrophyAmt: 1,
+				millionsonline: 0,
+				millionsFtAmt: 0,
+				millionsBronze: false,
+				millionsSilver: false,
+				millionsTrophy: false,
+				millionsBronzeAmt: 1,
+				millionsSilverAmt: 1,
+				millionsTrophyAmt: 1
+			}
 		};
 	}
 
@@ -87,61 +89,19 @@ class specialEvents extends Component {
 			.then(res => res.json())
 			.then(json => {
 				if (json.success.message) {
-					const values = json.success.message;
-
-					this.setState({
-						powerfest: values.powerfest || 0,
-						powerfestFtAmt: values.powerfestFtAmt || 0,
-						powerfestBronze: values.powerfestBronze || false,
-						powerfestSilver: values.powerfestSilver || false,
-						powerfestTrophy: values.powerfestTrophy || false,
-						powerfestBronzeAmt: values.powerfestBronzeAmt || 1,
-						powerfestSilverAmt: values.powerfestSilverAmt || 1,
-						powerfestTrophyAmt: values.powerfestTrophyAmt || 1,
-						monsterseries: values.monsterseries || 0,
-						monsterFtAmt: values.monsterFtAmt || 0,
-						monsterBronze: values.monsterBronze || false,
-						monsterSilver: values.monsterSilver || false,
-						monsterTrophy: values.monsterTrophy || false,
-						monsterBronzeAmt: values.monsterBronzeAmt || 1,
-						monsterSilverAmt: values.monsterSilverAmt || 1,
-						monsterTrophyAmt: values.monsterTrophyAmt || 1,
-						koseries: values.koseries || 0,
-						koFtAmt: values.koFtAmt || 0,
-						koBronze: values.koBronze || false,
-						koSilver: values.koSilver || false,
-						koTrophy: values.koTrophy || false,
-						koBronzeAmt: values.koBronzeAmt || 1,
-						koSilverAmt: values.koSilverAmt || 1,
-						koTrophyAmt: values.koTrophyAmt || 1,
-						omahaseries: values.omahaseries || 0,
-						omahaFtAmt: values.omahaFtAmt || 0,
-						omahaBronze: values.omahaBronze || false,
-						omahaSilver: values.omahaSilver || false,
-						omahaTrophy: values.omahaTrophy || false,
-						omahaBronzeAmt: values.omahaBronzeAmt || 1,
-						omahaSilverAmt: values.omahaSilverAmt || 1,
-						omahaTrophyAmt: values.omahaTrophyAmt || 1,
-						millionsonline: values.millionsonline || 0,
-						millionsFtAmt: values.millionsFtAmt || 0,
-						millionsBronze: values.millionsBronze || false,
-						millionsSilver: values.millionsSilver || false,
-						millionsTrophy: values.millionsTrophy || false,
-						millionsBronzeAmt: values.millionsBronzeAmt || 1,
-						millionsSilverAmt: values.millionsSilverAmt || 1,
-						millionsTrophyAmt: values.millionsTrophyAmt || 1
-					});
+					const values = json.success.message.specialEvent;
+					this.setState({ ...this.state, specialEvent: values });
 				}
 			})
 			.catch(err => console.log(err));
 	}
 
 	handleChange = name => event => {
-		this.setState({ [name]: event.target.value });
+		this.setState({ specialEvent: { ...this.state.specialEvent, [name]: event.target.value } });
 	};
 
-	handleCheced = name => event => {
-		this.setState({ [name]: event.target.checked });
+	handleChecked = name => event => {
+		this.setState({ specialEvent: { ...this.state.specialEvent, [name]: event.target.checked } });
 	};
 
 	handleSubmit = event => {
@@ -208,7 +168,7 @@ class specialEvents extends Component {
 								id="number"
 								variant="outlined"
 								label="Best Placement"
-								value={this.state[content.state]}
+								value={this.state.specialEvent[content.state]}
 								onChange={this.handleChange(`${content.state}`)}
 								type="number"
 								className={classes.textField}
@@ -218,20 +178,23 @@ class specialEvents extends Component {
 								id="number"
 								variant="outlined"
 								label="Final Tables"
-								value={this.state[content.ftState]}
+								value={this.state.specialEvent[content.ftState]}
 								onChange={this.handleChange(`${content.ftState}`)}
 								type="number"
 								className={classes.textField}
 								margin="normal"
 							/>
 							<div>
-								<FormControlLabel label="Bronze" control={<Checkbox checked={this.state[content.bronzeState]} onChange={this.handleCheced(`${content.bronzeState}`)} value={this.state[content.bronzeState]} />} />
-								{this.state[content.bronzeState] ? (
+								<FormControlLabel
+									label="Bronze"
+									control={<Checkbox checked={this.state.specialEvent[content.bronzeState]} onChange={this.handleChecked(`${content.bronzeState}`)} value={this.state.specialEvent[content.bronzeState]} />}
+								/>
+								{this.state.specialEvent[content.bronzeState] ? (
 									<TextField
 										id="number"
 										variant="outlined"
 										label="Amount"
-										value={this.state[content.bronzeStateAmt]}
+										value={this.state.specialEvent[content.bronzeStateAmt]}
 										onChange={this.handleChange(`${content.bronzeStateAmt}`)}
 										type="number"
 										className={classes.textFieldAmt}
@@ -242,13 +205,16 @@ class specialEvents extends Component {
 							</div>
 
 							<div>
-								<FormControlLabel label="Silver" control={<Checkbox checked={this.state[content.silverState]} onChange={this.handleCheced(`${content.silverState}`)} value={this.state[content.silverState]} />} />
-								{this.state[content.silverState] ? (
+								<FormControlLabel
+									label="Silver"
+									control={<Checkbox checked={this.state.specialEvent[content.silverState]} onChange={this.handleChecked(`${content.silverState}`)} value={this.state.specialEvent[content.silverState]} />}
+								/>
+								{this.state.specialEvent[content.silverState] ? (
 									<TextField
 										id="number"
 										variant="outlined"
 										label="Amount"
-										value={this.state[content.silverStateAmt]}
+										value={this.state.specialEvent[content.silverStateAmt]}
 										onChange={this.handleChange(`${content.silverStateAmt}`)}
 										type="number"
 										className={classes.textFieldAmt}
@@ -259,13 +225,16 @@ class specialEvents extends Component {
 							</div>
 
 							<div>
-								<FormControlLabel label="Trophy" control={<Checkbox checked={this.state[content.trophyState]} onChange={this.handleCheced(`${content.trophyState}`)} value={this.state[content.trophyState]} />} />
-								{this.state[content.trophyState] ? (
+								<FormControlLabel
+									label="Trophy"
+									control={<Checkbox checked={this.state.specialEvent[content.trophyState]} onChange={this.handleChecked(`${content.trophyState}`)} value={this.state.specialEvent[content.trophyState]} />}
+								/>
+								{this.state.specialEvent[content.trophyState] ? (
 									<TextField
 										id="number"
 										variant="outlined"
 										label="Amount"
-										value={this.state[content.trophyStateAmt]}
+										value={this.state.specialEvent[content.trophyStateAmt]}
 										onChange={this.handleChange(`${content.trophyStateAmt}`)}
 										type="number"
 										className={classes.textFieldAmt}

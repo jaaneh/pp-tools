@@ -25,25 +25,27 @@ class Knockouts extends Component {
 			submitSuccess: false,
 			disableButton: false,
 			generatedURL: '',
-			mattstaples: 0,
-			jeffgross: 0,
-			kristenbicknell: 0,
-			allinpav: 0,
-			kevinmartin: 0,
-			luimartins: 0,
-			anatolyfilatov: 0,
-			hotted: 0,
-			ryanschoonbaert: 0,
-			egption: 0,
-			dramaticdegen: 0,
-			courtiebee: 0,
-			elky: 0,
-			patrickleonard: 0,
-			heymonia: 0,
-			dwstevie: 0,
-			tonkaaaap: 0,
-			isildur: 0,
-			bencb: 0
+			knockouts: {
+				mattstaples: 0,
+				jeffgross: 0,
+				kristenbicknell: 0,
+				allinpav: 0,
+				kevinmartin: 0,
+				luimartins: 0,
+				anatolyfilatov: 0,
+				hotted: 0,
+				ryanschoonbaert: 0,
+				egption: 0,
+				dramaticdegen: 0,
+				courtiebee: 0,
+				elky: 0,
+				patrickleonard: 0,
+				heymonia: 0,
+				dwstevie: 0,
+				tonkaaaap: 0,
+				isildur: 0,
+				bencb: 0
+			}
 		};
 	}
 
@@ -62,38 +64,15 @@ class Knockouts extends Component {
 			.then(res => res.json())
 			.then(json => {
 				if (json.success.message) {
-					const values = json.success.message;
-
-					this.setState({
-						mattstaples: values.matt_staples || 0,
-						jeffgross: values.jeff_gross || 0,
-						kristenbicknell: values.kristen_bicknell || 0,
-						allinpav: values.allinpav || 0,
-						kevinmartin: values.kevin_martin || 0,
-						luimartins: values.lui_martins || 0,
-						anatolyfilatov: values.anatoly_filatov || 0,
-						hotted: values.hotted || 0,
-						ryanschoonbaert: values.ryan_schoonbaert || 0,
-						egption: values.egption || 0,
-						dramaticdegen: values.dramatic_degen || 0,
-						courtiebee: values.courtiebee || 0,
-						elky: values.elky || 0,
-						patrickleonard: values.patrick_leonard || 0,
-						heymonia: values.heymonia || 0,
-						dwstevie: values.dwstevie || 0,
-						tonkaaaap: values.tonkaaaap || 0,
-						isildur: values.isildur || 0,
-						bencb: values.bencb || 0
-					});
+					const values = json.success.message.knockouts;
+					this.setState({ ...this.state, knockouts: values });
 				}
 			})
 			.catch(err => console.log(err));
 	}
 
 	handleChange = name => event => {
-		this.setState({
-			[name]: event.target.value
-		});
+		this.setState({ knockouts: { ...this.state.knockouts, [name]: event.target.value } });
 	};
 
 	handleSubmit = event => {
@@ -151,7 +130,7 @@ class Knockouts extends Component {
 		) : null;
 
 		const formFields = formFieldsConfig.map((content, i) => {
-			return <TextField key={i} id="number" label={content.name} value={this.state[content.state]} onChange={this.handleChange(`${content.state}`)} type="number" className={classes.textField} margin="normal" />;
+			return <TextField key={i} id="number" label={content.name} value={this.state.knockouts[content.state]} onChange={this.handleChange(`${content.state}`)} type="number" className={classes.textField} margin="normal" />;
 		});
 
 		return (

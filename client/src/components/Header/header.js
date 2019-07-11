@@ -42,6 +42,9 @@ class Header extends Component {
 		const token = localStorage.getItem('token');
 		if (token) {
 			this.setState({ isLoggedIn: true });
+		} else {
+			localStorage.removeItem('token');
+			this.setState({ isLoggedIn: false });
 		}
 	}
 
