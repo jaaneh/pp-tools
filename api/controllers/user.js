@@ -7,6 +7,7 @@ const User = require('../../models/user');
 function createTokenSendResponse(user, res, next) {
 	const payload = {
 		username: user.username,
+		isAdmin: user.isAdmin,
 		userId: user._id
 	};
 	jwt.sign(
@@ -39,6 +40,7 @@ exports.user_signup = (req, res, next) => {
 						_id: mongoose.Types.ObjectId(),
 						username: req.body.username,
 						password: hash,
+						isAdmin: false,
 						signed_up: req.body.signed_up,
 						last_login: req.body.signed_up
 					});
@@ -118,26 +120,9 @@ exports.users_get_all = (req, res, next) => {
 		});
 };
 
-// GET /user/:userId
-exports.users_get_user = (req, res, next) => {
-	User.find({ _id: req.params.userId })
-		.exec()
-		.then(doc => {
-			res.status(200).json({
-				user: doc
-			});
-		})
-		.catch(err => {
-			console.log(err);
-			res.status(500).json({
-				error: { message: err }
-			});
-		});
-};
-
-// DELETE /user/:userId
+// POST /user/delete
 exports.users_delete_user = (req, res, next) => {
-	User.deleteOne({ _id: req.params.userId })
+	User.findOneAndDelete({ _id: req.body.userId })
 		.exec()
 		.then(result => {
 			res.status(200).json({
@@ -149,5 +134,24 @@ exports.users_delete_user = (req, res, next) => {
 			res.status(500).json({
 				error: { message: err }
 			});
+		});
+};
+
+exports.users_update_user = (req, res, next) => {
+	User.findOneAndUpdate({ _id: req.body.userId }, { new: true })
+		.exec()
+		.then(user => {
+			if (user) {
+				user.username = req.body.username;
+				user.isAdmin = req.body.isAdmin;
+				user.save();
+				res.status(200).json({
+					success: { message: 'User Updated' }
+				});
+			} else {
+				res.status(401).json({
+					error: { message: 'Not Authorized' }
+				});
+			}
 		});
 };

@@ -9,6 +9,7 @@ import Header from './components/Header/header';
 import Home from './components/Home/home';
 import SignUp from './components/SignUp/signup';
 import Login from './components/Login/login';
+import Admin from './components/Admin/admin';
 import Dashboard from './components/Dashboard/dashboard';
 
 const theme = createMuiTheme({
@@ -41,6 +42,7 @@ class App extends Component {
 						<Route exact path="/signup" component={SignUp} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/dashboard" component={Dashboard} />
+						<Route exact path="/admin" component={Admin} />
 					</Switch>
 				</MuiThemeProvider>
 			</StylesProvider>

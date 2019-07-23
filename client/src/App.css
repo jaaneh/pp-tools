@@ -43,14 +43,7 @@ html {
 	color: #fff;
 	opacity: 0.9;
 }
-.MenuIcon {
-	display: none !important;
-}
 @media only screen and (max-width: 599px) {
-	.MenuIcon {
-		display: inline-block !important;
-		font-size: 32px !important;
-	}
 	.Dashboard-main-192 {
 		padding-top: 64px !important;
 	}
@@ -59,11 +52,6 @@ html {
 	}
 	.navAlignment {
 		display: none !important;
-	}
-}
-@media only screen and (max-width: 455px) {
-	.MenuIcon {
-		font-size: 32px !important;
 	}
 }
 .mainTop,

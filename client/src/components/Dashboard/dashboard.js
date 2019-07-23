@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/styles';
 
-import DashboardTabs from '../DashboardTabs/tabs';
+import DashboardTabs from './Tabs/tabs';
 
 const styles = require('./styles');
 
@@ -73,11 +73,9 @@ class Dashboard extends Component {
 		greeting = user ? <p className={classes.greeting}>Hello, {capitalize(user.username)}!</p> : null;
 
 		return (
-			<div>
-				<section className={classes.main}>
-					<DashboardTabs greeting={greeting} />
-				</section>
-			</div>
+			<section className={classes.main}>
+				<DashboardTabs greeting={greeting} />
+			</section>
 		);
 	}
 }

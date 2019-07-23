@@ -10,8 +10,8 @@ const userController = require('../controllers/user');
 router.post('/signup', userController.user_signup);
 router.post('/login', userController.users_login);
 router.get('/', userController.users_get_me);
-router.get('/getAll', checkAuth.isLoggedIn, userController.users_get_all);
-router.get('/:userId', checkAuth.isLoggedIn, userController.users_get_user);
-router.delete('/:userId', checkAuth.isLoggedIn, userController.users_delete_user);
+router.get('/getAll', checkAuth.isAdmin, userController.users_get_all);
+router.post('/delete', checkAuth.isAdmin, userController.users_delete_user);
+router.post('/editUser', checkAuth.isAdmin, userController.users_update_user);
 
 module.exports = router;
